@@ -1,0 +1,237 @@
+*{
+    box-sizing:border-box;
+    /* border:solid 1px; */
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#warraper{
+    display:flex;
+    flex-direction:column;
+}
+/*_________________________________________HEADER START_____________________________________________*/
+#header {
+    background: white;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    min-height: 75px;
+   position: fixed;
+   top: 0;
+   z-index: 1;
+   box-shadow:  0px 1px 10px black;
+}
+#header ul{
+    list-style: none;
+    display:flex;
+   
+}
+#header a{
+    text-decoration: none;
+
+}
+.logo img{
+    width: 150px;
+    margin-top: 15px;
+}
+.menu{
+    margin: 0 0 0 auto;
+}
+.menu li{
+    margin: 0 20px;
+}
+.menu ul li a{
+    color: green;
+}
+.login{
+    margin:0 30px ;
+    /* color: rgb(255, 255, 255); */
+    background: darkgreen;
+    border-radius: 8px;
+    width: 50px;
+    height: 29px;
+    padding: 5px 10px;
+
+}
+.login a{
+    color: aliceblue;
+    
+}
+
+
+
+
+#click{
+    display: none;
+}
+.fa-bars{
+    margin:0 25px;
+}
+.fontawesome{
+    margin: 0 0 0 auto;
+}
+.fontawesome li{
+    margin: 0  20px;
+}
+/*_________________________________________HEADER END_____________________________________________*/
+
+/*_________________________________________SLIDER START_____________________________________________*/
+#slider{
+    z-index: 0;
+    position: relative;
+    top: 75px;
+    width: 100%;
+    
+}
+.slide img{
+    filter: brightness(75%);
+    width: 100%;
+}
+/*_________________________________________SLIDER END_____________________________________________*/
+
+/*_________________________________________CONTENT START_____________________________________________*/
+#content{
+    z-index: 0;
+    position: relative;
+    top: 80px;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    color: green;
+    grid-template-columns: repeat(4 ,1fr);
+    grid-template-rows:50px repeat(3);
+    grid-gap:20px;
+}
+#content h1{
+    font-size: 30px;
+    color: black;
+    
+    grid-column: 1/5;
+    grid-row: 1/2;
+    display: grid;
+    justify-content: center;
+}
+hr{
+    margin-top: 100px;
+    border-radius: 20px;
+    box-shadow: 0 px 20px black ;
+}
+#content img{
+    width: 100%;
+    box-shadow:  0px 1px 10px black;
+}
+.flip:hover img{
+    transform: rotateY(180deg);
+}
+.flip:hover .view{
+    opacity: 1;
+    top: 230px;
+}
+.view{
+    background-color: rgb(117, 179, 111);
+    transition: 1s;
+    position: relative;
+    z-index: 2;
+    top: -18px;
+    opacity: 0;
+    text-align: center;
+}
+.flip span{
+    display: grid;
+    justify-content: end;
+}
+.flip a{
+    color: white;
+    text-decoration: none;
+}
+.flip img{
+    transition: 1s;
+}
+.not-flip{
+    text-align: center;
+}
+
+
+.items a{
+    text-decoration: none;
+}
+/*_________________________________________CONTENT END_____________________________________________*/
+
+/*_________________________________________FOOTER START_____________________________________________*/
+#footer{
+    position: relative;
+    top: 90px;
+    padding: 10px;
+    margin:5px auto;
+    width: 95%;
+    /* margin: auto; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.usefullinks{
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+.usefullinks a{
+    text-decoration: none;
+}
+.usefullinks li{
+    list-style: none;
+}
+.contactus{
+    width: 210px;
+    word-wrap: break-word;
+    flex-grow: 1;
+}
+.contactus a{
+    text-decoration: none;
+}
+.folloeus{
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+.folloeus a{
+    text-decoration: none;
+    margin: 5px 5px;
+    font-size: 25px;
+}
+.paymentmethods{
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+.paymentmethods h3{
+    width: 100%;
+}
+.paymentmethods img{
+    width: 25%;
+}
+.payment{
+    width: 80%;
+}
+
+
+#last{
+    position: relative;
+    top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+}
+#last .like{
+    flex-basis: 300px;
+    flex-grow: 1;
+    /* align-self: end; */
+}
+#last .copyright{
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+/*_________________________________________FOOTER END_____________________________________________*/
+
+
